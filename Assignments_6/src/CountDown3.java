@@ -1,6 +1,6 @@
 //Jeeban Bashyal
 import java.util.Scanner;
-public class CountDown1 {
+public class CountDown3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the size: ");
@@ -9,11 +9,16 @@ public class CountDown1 {
 		// Nested Loop
 		// First make sure it will run horizontally for the user input size times.
 		// Then printing it for the vertically for the user input size times.
-		for(int row = size; row > 0; row--) {
-			for(int col = size; col > 0; col--) {
+		for(int row = 1; row <= size; row++) {
+			
+			for(int col = 1; col >= row; col++) {
 				
 				//Printing the col and running until row satisfies the condition.
+
+				//System.out.print(row);
 				System.out.print(col);
+				//System.out.print(size);
+				
 				
 				// For eradicating the last space
 				if (col > 1) {

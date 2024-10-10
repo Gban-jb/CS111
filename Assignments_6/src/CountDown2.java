@@ -9,15 +9,11 @@ public class CountDown2 {
 		// Nested Loop
 		// First make sure it will run horizontally for the user input size times.
 		// Then printing it for the vertically for the user input size times.
-		for(int row = size; row > 0; row--) {
-			
-			for(int col = row; col > 0; col--) {
+		for(int row = 1; row <= size; row++) {
+			for(int col = size; col >= row; col--) {
 				
-				//Printing the col and running until row satisfies the condition.
-
-				//System.out.print(row);
+				//Printing the col and running until col >=row.
 				System.out.print(col);
-				//System.out.print(size);
 				
 				
 				// For eradicating the last space
