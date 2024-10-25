@@ -1,38 +1,35 @@
 // Jeeban Bashyal
 import java.util.Scanner;
-public class GeneratePasswords {
+public class GeneratePasswords {             	// class
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {    // main class
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter the number of password you want to create: ");
+		System.out.print("Enter the number of password you want to generate: ");
 		int number = sc.nextInt();
 		
-		for(int i = number; number <=0; number--) {
-			String character = "";
-			for(int j= 5; j<=1; j--) {
-				character = character + getLowerCaseChar();
-			}
-			System.out.print(character);
-			
-			
+		// Main program
+		for(int i = 0; i < number; i++) {  						//Generating the userInput times passwords
+			String character = "";		   						// Initialized
+			for(int j= 5; j>=1; j--) {	   						// Getting the 5 times character
+				character = character + getLowerCaseChar();		
+			}													// End of character loop
+			System.out.print(character);						// characters print outside the loop complication
+			System.out.print(getIntFromRange(1000, 9999));		// Getting the number only
+			System.out.println();								// Break for it
 		}
-
-		
 		sc.close();
 	}
 	
+	// Integer functions
 	public static int getIntFromRange(int min, int max) {
-		
-	int randomNumber = (int) (Math.random() * (9999 - 1000 + 1) + 1000);
-	return randomNumber;	
+	int randomNumber = (int) (Math.random() * (max - min + 1) + min); 	//Random formula
+	return randomNumber;												// Returns the randomNumber whenever it is called
 	}
 	
-	public static char getLowerCaseChar() {
-		
-		int randomNumber = (int) (Math.random()* ('z' - 'a' +1) + 'a');
-		char randomChar = (char)(randomNumber);
-		return randomChar;
-		
+	// Character functions
+	public static char getLowerCaseChar() {								
+		int randomNumber = (int) (Math.random()* ('z' - 'a' + 1) + 'a');	// Random character from a to z.
+		char randomChar = (char)(randomNumber);								// typeCasting from int to char
+		return randomChar;													// Value returns
 	}
-
-}
+} 																			// End of main function

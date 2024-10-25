@@ -1,5 +1,5 @@
 // Jeeban Bashyal
-public class sumSeries {
+public class SumSeries {
 
 	public static void main(String[] args) {
 		//double sum = 0.0;

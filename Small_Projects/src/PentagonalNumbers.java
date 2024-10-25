@@ -2,22 +2,22 @@
 public class PentagonalNumbers {
 
 	public static void main(String[] args) {
-
-		// getPentagonalNumber(n);
-
-		for (int i = 1; i <= 100; i++) { // Running the loop 100 times for the 100 numbers. 
-			System.out.printf("%7d", getPentagonalNumber(i));  // Printing the Pentagonal number after calling the getPentagonalNumber method.
-			if (i != 100) { 								   // Before i == 100 - while in the loops	
-
-				if (i % 10 == 0) {								// Breaking the rows after the 10 numbers
-					System.out.println();
-				}
 				
+		final int MAX_NUMBER = 100;
+		for (int i = 1; i <= MAX_NUMBER; i++) { 							// Running the loop 100 times for the 100 numbers. 
+			
+			System.out.printf("%7d", getPentagonalNumber(i)); 				// Print Pentagonal number by calling getPentagonalNumber method.
+			if (i != MAX_NUMBER) { 								   			// Before i == 100 - while in the loops	
+
+				if (i % 10 == 0) {											// Breaking the rows after the 10 numbers
+					System.out.println();
+				}	
 			}
+			
 		}
 	}
 
-	public static int getPentagonalNumber(int n) {    			// PentagonalNumber Methods. 
+	public static int getPentagonalNumber(int n) {    						//PentagonalNumber Methods. 
 		return (n * (3 * n - 1)) / 2;
 	}
 }
