@@ -12,18 +12,19 @@ public class CountPositiveNegative {
 		int n = input.nextInt();
 		
 		for(int i = 1; i <=n; i++) {
+			System.out.println("Enter a number: ");
 			double user = input.nextDouble();
 			
 			if (user> 0) {
-				positives =+ + 1;
+				positives += 1;
 			}
 			
 			else if (user < 0){
-				negatives =+ negatives;
+				negatives += 1;
 			}
 			
 		}
-		System.out.println(" There are "+ positives + "numbers and " + negatives + "numbers.");
+		System.out.println(" There are "+ positives + " positives numbers and " + negatives + " negatives numbers.");
 
 		input.close();
 	}
