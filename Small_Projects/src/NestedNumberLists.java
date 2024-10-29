@@ -1,17 +1,22 @@
 //Jeeban Bashyal
+import java.util.Scanner;
+
 public class NestedNumberLists {
 
 	public static void main(String[] args) {
-//int n = 5;
+		
+		Scanner input = new Scanner(System.in);
 
-for(int i = 5; i >=1; i--) {
-	for(int j = 1; j <=i; j++) {
+		System.out.println("Enter a number: ");  // UserInput number
+		int n = input.nextInt();
+		
+for(int i = n; i >=1; i--) {  // Number of rows
+	for(int j = 1; j <=i; j++) {   // Main printing conditions
 		System.out.print(j);
-	//j = j-1;	
 	}
 	
 
-	System.out.println();
+	System.out.println();   // Line break
 }
 	}
 }
