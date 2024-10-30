@@ -65,3 +65,57 @@ else 											// Else it is not a palindrome number and returns 0.
 return 0;	
 
 */
+
+
+
+
+
+
+// The MethodArray one
+
+/* // Jeeban Bashyal
+import java.util.Arrays;
+import java.util.Scanner;
+public class CountSingleDigits {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+	//int max = 9;
+	//int min = 0;
+	
+	RandomNumber(9, 0);
+ countsSingle( 0);
+	input.close();
+	
+	}
+	public static void RandomNumber( int max, int min) {
+		for (int i = 0; i <=99; i++) {
+			
+		int randInt = (int) (Math.random()*(max - min + 1)  + min);
+		
+		System.out.print(randInt);
+		
+		}
+		System.out.println();
+	}
+	
+	public static void countsSingle (int j){
+		int array[] = new int[10];
+		for(int i = 0; i <=9; i++) {
+			array[i] = i;
+			System.out.println(array[i]);
+			//String arr[] = Arrays.toString(countsSingle());
+					}		
+	}
+	
+	}
+
+	/* public static void counts (int j ,int k){
+	int array[][] = new int[10][];
+	for(int i = 0; i <=9; i++) {
+		array[i][k] = array[i][k];
+		System.out.println(array[i][k]);
+	}		
+	
+	*/	
