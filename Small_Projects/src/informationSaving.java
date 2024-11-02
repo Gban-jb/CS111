@@ -119,3 +119,65 @@ public class CountSingleDigits {
 	}		
 	
 	*/	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* import java.util.Scanner;
+
+public class GuessYourNumber {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Pick a  number between 1 and 1000, and I will try to guess it.\r\n" + "...don't tell me what it is.\n");
+		System.out.println("I think the number is between 1 and 1000.\r\n");
+		System.out.println("I'm going to guess 500.");
+		printMenu();
+	}
+	
+	public static void printMenu() {     
+		System.out.println("Prints the menu of user options:");
+		     System.out.println("(A) My guess is correct.");
+		     System.out.println("(B) My guess is too low.");
+		     System.out.println("(C) My guess is too high.");
+		     System.out.println("(Q) Quit.");
+		     System.out.print("Enter A, B, C or Q:");  
+		     
+		     
+	}
+	
+	public static char getUserOption(Scanner input) {
+		
+		
+	}
+	
+	
+
+}
+*/

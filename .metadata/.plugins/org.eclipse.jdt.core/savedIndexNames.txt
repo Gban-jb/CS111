@@ -10,4 +10,3 @@ INDEX VERSION 1.134+C:\Users\memor\eclipse-workspace\.metadata\.plugins\org.ecli
 3803894794.index
 1660703741.index
 1195455883.index
-1103387149.index
