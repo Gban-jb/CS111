@@ -1,9 +1,6 @@
-
-//Jeeban Bashyal
-
 import java.util.Scanner;
 
-public class LightsOut {
+public class gban {
     public static final char LIGHT_OFF = '.';
     public static final char LIGHT_ON = '@';
     public static final int SIZE = 4;
@@ -40,7 +37,7 @@ public class LightsOut {
 
         // Print result with proper move count wording
         String moveText = moves == 1 ? "move" : "moves";
-        System.out.println("You solved the puzzle in " + moves + " " + moveText + ".");
+        System.out.println("You solved the puzzle in " + moves + " " + moveText + "!");
         input.close();
     }
 
