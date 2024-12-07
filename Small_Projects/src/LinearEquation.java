@@ -1,3 +1,5 @@
+// Jeeban Bashyal
+
 public class LinearEquation {
 	private int a;
 	private int b;
